@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrategia de Marketing Koala</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/beercss@3.6.5/dist/cdn/beer.min.css" rel="stylesheet">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.6.5/dist/cdn/beer.min.js"></script>
+    
+</head>
+<body>
+    <div class="navbar">
+        <!--logo-->
+        <img src="./img/logo_koala.png" alt="logo" width="150" height="150" />
+    </div>
+    <header class="primary-container">
+        <h3>Estrategia de Marketing</h3>
+    </header>
+    <main>
+        <section>
+            <form id="marketingForm">
+                <div class="form-group">
+                    <p id="action">Selecciona una opción.</p>
+                    <label for="options"></label>
+                    <select name="options" id="options">
+                        <option value="">--Selecciona--</option>
+                        <option value="servicio">Servicio</option>
+                        <option value="producto">Producto</option>
+                        <option value="curso">Curso</option>
+                        <option value="taller">Taller</option>
+                        <option value="asesoria">Asesoría</option>
+                        <option value="platica">Plática</option>
+                        <option value="inauguracion">Inauguración</option>
+                        <option value="evento">Evento</option>
+                        <option value="concurso">Concurso</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="companyName">Nombre de la Empresa:</label>
+                    <input type="text" id="companyName" name="companyName" placeholder="Ingresa el nombre de la empresa">
+                </div>
+                <div class="form-group">
+                    <label for="productType">Tipo de Producto:</label>
+                    <input type="text" id="productType" name="productType" placeholder="Ingresa el producto">
+                </div>
+                <div class="form-group">
+                    <label for="customPhrase">Frase Personalizada:</label>
+                    <input type="text" id="customPhrase" name="customPhrase" placeholder="Ingresa una frase personalizada (opcional)">
+                </div>
+                <button type="button" class="primary" onclick="getMarketingStrategy()">Generar Estrategia</button>
+            </form>    
+        </section>
+        <section>
+            <h2>Resultado:</h2>
+            <textarea id="result1" rows="150" readonly></textarea>
+            <button type="button" class="primary" onclick="copyToClipboard()">Copiar al Portapapeles</button>
+        </section>
+        <!--Pie de pagina con datos de contacto-->
+        <article class="primary-container">
+            <p class="bold">Programa desarrollado por:</p>
+            <p>Josue J. Aguilar S.</p>
+            <p>josue.aguilar.jjas@gmail.com</p>   
+        </article>
+        <footer class="fixed"></footer>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
