@@ -50,7 +50,7 @@ async function getMarketingStrategy() {
   const selectedOption = document.getElementById("options").value;
 
   // API de proyecto marketing (solo se cuenta con algunos usos limitados)
-  const apiKey = "sk-proj-pjH4jPURL4L1e3YF22lpT3BlbkFJgPNYFRG8szCFnkuwPBVQ"; // Asegúrate de que esta clave sea válida y segura
+  const apiKey = "sk-proj-iRAwiNSiw84uUpdjpyXGT3BlbkFJqi8U5vj5FsbSWsI0JjkB"; // Asegúrate de que esta clave sea válida y segura
 
   // Texto del prompt para la API
   const promptText = `Genera una estrategia de marketing para un producto de tipo ${productType} 
